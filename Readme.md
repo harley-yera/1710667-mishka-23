@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Yerazik Hakobyan](https://up.htmlacademy.ru/adaptive/23/user/1710667).
-* Наставник: Алексей Хабиров.
+* Наставник: [Алексей Хабиров](https://htmlacademy.ru/profile/alex_khab).
 
 ---
 

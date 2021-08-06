@@ -1,0 +1,24 @@
+.promo__headline {
+  font-size: 25px;
+  font-weight: 700;
+  color: $black;
+}
+
+.promo__top-product {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $accent-color;
+  text-transform: uppercase;
+}
+
+.promo__table {
+  line-height: 20px;
+}
+
+.promo__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}

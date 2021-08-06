@@ -1,0 +1,33 @@
+.hero {
+  background-color: $alabaster;
+  background-repeat: no-repeat;
+}
+
+
+.hero__headline {
+  text-align: center;
+  color: $black;
+  font-size: 27px;
+}
+
+.hero__list {
+  list-style: none;
+}
+
+.hero__item {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+
+  &--interior {
+    background-color: $accent-color;
+  }
+
+  &--toys {
+    background-color: $fountain-blue;
+  }
+}
+
+.hero__unit {
+  color: $white;
+}

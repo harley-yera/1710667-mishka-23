@@ -2,6 +2,10 @@
   text-transform: uppercase;
 }
 
+.text-field__label-personal {
+  text-transform: lowercase;
+}
+
 .text-field__input {
   color: $opacity-black;
   font-family: "Open Sans", "Arial", sans-serif;

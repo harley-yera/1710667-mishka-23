@@ -1,0 +1,24 @@
+.text-field__label {
+  text-transform: uppercase;
+}
+
+.text-field__label-personal {
+  text-transform: lowercase;
+}
+
+.text-field__input {
+  color: $opacity-black;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  border: 0;
+  border-bottom: 2px solid $black;
+}
+
+.text-field__textarea {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: $text-color;
+  font-size: 17px;
+  line-height: 18px;
+  border: 2px solid $text-color;
+}

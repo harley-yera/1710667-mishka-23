@@ -1,12 +1,24 @@
+.video__post {
+  margin-bottom: 30px;
+}
+
 .video__title {
+  margin: 0;
+  margin-bottom: 26px;
   color: $black;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
 }
 
+.video__photo {
+  margin: 0;
+  margin-bottom: 35px;
+}
 
 .video__description {
+  margin: 0;
+  margin-bottom: 41px;
   font-size: 13px;
   line-height: 24px;
 }

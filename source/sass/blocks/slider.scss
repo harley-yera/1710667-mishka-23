@@ -1,8 +1,80 @@
 
+.slider {
+  padding-top: 38px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 82px;
+    padding-bottom: 115px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 174px;
+    padding-bottom: 163px;
+  }
+}
+
+.slider__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
 .slider__title {
   font-size: 25px;
   color: $black;
   font-weight: 700;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    order: -2;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.slider__list {
+  padding-top: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 35px;
+  }
+}
+
+.slider__item {
+  margin-bottom: 33px;
+}
+
+.slider__text {
+  margin: 0;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
+}
+
+.slider__autor-info {
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
 }
 
 .slider__autor {
@@ -10,4 +82,75 @@
   font-weight: 700;
   line-height: 24px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
+}
+
+.slider__email {
+  font-size: 17px;
+}
+
+.slider__new-slide {
+  display: none;
+}
+
+.slider__arrows {
+  display: flex;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 38px;
+    border: 1px solid $gallery;
+    padding: 13px 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    padding-left: 530px;
+    padding-top: 240px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 780px;
+    padding-top: 200px;
+  }
+}
+
+.slider__arrow {
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  background-color: $black;
+
+  &--preview {
+    @media (max-width: $mobile-width-only) {
+      margin-right: 42px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-right: 37px;
+    }
+  }
+
+  &--next {
+    @media (max-width: $mobile-width-only) {
+      margin-left: 47px;
+    }
+  }
+}
+
+.slider__button {
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    margin-left: auto;
+  }
 }

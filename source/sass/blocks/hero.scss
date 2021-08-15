@@ -1,23 +1,64 @@
 .hero {
   background-color: $alabaster;
   background-repeat: no-repeat;
+  margin-bottom: 31px;
 }
 
 
 .hero__headline {
+  margin: 0;
+  padding-top: 88px;
+  padding-bottom: 78px;
   text-align: center;
   color: $black;
   font-size: 27px;
+  background-image: url("../img/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 155px;
+    padding-bottom: 253px;
+    background-image: url("../img/hero-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 158px;
+    padding-bottom: 355px;
+    background-image: url("../img/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+  }
 }
 
 .hero__list {
+  margin: 0 -30px;
+  padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .hero__item {
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
+  padding-top: 24px;
+  padding-bottom: 31px;
+  padding-right: 30px;
+  padding-left: 30px;
 
   &--interior {
     background-color: $accent-color;

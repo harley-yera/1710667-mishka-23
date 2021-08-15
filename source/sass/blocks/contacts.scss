@@ -1,7 +1,140 @@
+.contacts {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 31px;
+  padding-bottom: 62px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 105px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+}
+
+.contacts__wrapper {
+  padding: 0 30px;
+  padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    padding-left: 120px;
+    margin-right: 50px;
+  }
+}
+
+.contacts__title {
+  margin: 0;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    order: -2;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.contacts__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    padding-top: 0;
+  }
+}
+
+.contacts__item {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
 .contacts__tag {
   font-size: 14px;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .contacts__value {
   font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.contacts__map {
+  margin: 0 auto;
+  height: 455px;
+  width: 320px;
+  background-image: url("../img/map-mobile.png");
+  background-repeat: no-repeat;
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    height: 457px;
+    width: 768px;
+    background-image: url("../img/map-tablet.png");
+    background-repeat: no-repeat;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 527px;
+    background-image: url("../img/map-desktop.png");
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+}
+
+.contacts__button {
+  display: flex;
+  margin: 0 auto;
+  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    width: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: 120px;
+    margin-top: -60px;
+  }
 }

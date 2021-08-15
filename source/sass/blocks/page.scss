@@ -3,6 +3,11 @@
 }
 
 .page__body {
+  min-width: 320px;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: flex-start;
+  margin: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   color: $text-color;
   font-size: 15px;

@@ -1,3 +1,27 @@
 .page-footer {
   background-color: $seashell;
 }
+
+.page-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__logo {
+  display: block;
+  width: 101px;
+  height: 34px;
+  background-color: $black;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.page-footer__social {
+  padding-top: 25px;
+  padding-bottom: 27px;
+}

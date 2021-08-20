@@ -1,0 +1,42 @@
+.radio {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio__tag {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin-right: 19px;
+  border-radius: 50%;
+  border: 2px solid $text-color;
+
+  &::after {
+    position: absolute;
+    display: none;
+    left: 50%;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    content: "";
+    border-radius: 50%;
+    background-color: $downy;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.radio__input:hover + .radio__tag,
+.radio__input:focus + .radio__tag {
+  border-color: $light-downy;
+}
+
+.radio__input:checked + .radio__tag::after {
+  display: block;
+}
+
+.radio__input:disabled + .radio_tag {
+  border-color: rgba($black, 0.3);
+}
